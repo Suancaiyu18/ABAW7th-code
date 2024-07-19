@@ -1,0 +1,36 @@
+BASIC:
+  ROOT_DIR: "/home/geek/spot/ABAW_code/"
+  WORKERS: 4
+  BACKUP_CODES: True
+  BACKUP_LISTS: ['lib', 'experiments']
+  SAVE_PREDICT_RESULT: False
+  SHOW_CFG: False
+  CREATE_OUTPUT_DIR: True
+
+DATASET:
+  PART: False
+  ANN_PATH: "/data/datasets/ABAW/MTL/val_set_ann_all.csv"
+  PATCH_H: 17
+  PATCH_W: 17
+  TRAIN_TXT_PATH: "/data/datasets/ABAW/MTL/new_train_annotations.txt"
+  VAL_TXT_PATH: "/data/datasets/ABAW/MTL/validation_set_annotations.txt"
+  FEAT_DIR: "/data/datasets/ABAW/MTL/cropped_aligned/"
+  TRAIN_SPLIT: 'train'
+  VAL_SPLIT: 'test'
+  NUM_CLASSES: 2
+  PIN_MEMORY: True
+
+MODEL:
+  TOKENS: 22
+  ORI_FEATURE_DIM: 1024
+  HIDDEN_DIM: 128
+  OUTPUT_DIM: 128
+
+TRAIN:
+  TYPE: AdamW
+  WEIGHT_DECAY: 0
+  LR: 0.001
+  BATCH_SIZE: 64
+  END_EPOCH: 6
+  WARM_UP_EPOCH: 5
+  MODEL_DIR: 'output_submission/submission_5/'

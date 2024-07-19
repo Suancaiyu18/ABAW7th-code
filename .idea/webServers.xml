@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="04044820-c1e7-4010-a4ea-c2ff5f44cc98" name="abaw">
+        <fileTransfer accessType="SFTP" host="192.168.18.164" port="22" sshConfigId="9d260984-3d6f-4d0d-9a84-3101a38784bc" sshConfig="geek@192.168.18.164:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="9614850c-0c40-49e5-9008-f3c0a8f77126" name="abaw_github">
+        <fileTransfer rootFolder="/home/geek" accessType="SFTP" host="192.168.18.164" port="22" sshConfigId="9d260984-3d6f-4d0d-9a84-3101a38784bc" sshConfig="geek@192.168.18.164:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
